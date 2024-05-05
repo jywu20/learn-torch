@@ -1,0 +1,60 @@
+
+For more info and how to connect from windows,
+   see https://docs.ycrc.yale.edu/clusters-at-yale/guides/jupyter/
+MacOS or linux terminal command to create your ssh tunnel
+ssh -N -L 8347:nid005994:8347 jywu@chn.ycrc.yale.edu
+Windows MobaXterm info
+Forwarded port:same as remote port
+Remote server: nid005994
+Remote port: 8347
+SSH server: chn.ycrc.yale.edu
+SSH login: jywu
+SSH port: 22
+Use a Browser on your local machine to go to:
+localhost:8347  (prefix w/ https:// if using password)
+
+[KernelApp] Starting kernel 'python3'
+[KernelApp] ERROR | Can only launch a kernel on a local interface. This one is not: nid005994.Make sure that the '*_address' attributes are configured properly. Currently valid addresses are: ['127.0.0.1', '10.100.76.65', '10.249.14.6', '128.55.77.209', '0.0.0.0', '']
+Traceback (most recent call last):
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/manager.py", line 87, in wrapper
+    out = await method(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/manager.py", line 435, in _async_start_kernel
+    kernel_cmd, kw = await self._async_pre_start_kernel(**kw)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/manager.py", line 400, in _async_pre_start_kernel
+    kw = await self.provisioner.pre_launch(**kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/provisioning/local_provisioner.py", line 177, in pre_launch
+    raise RuntimeError(msg)
+RuntimeError: Can only launch a kernel on a local interface. This one is not: nid005994.Make sure that the '*_address' attributes are configured properly. Currently valid addresses are: ['127.0.0.1', '10.100.76.65', '10.249.14.6', '128.55.77.209', '0.0.0.0', '']
+Traceback (most recent call last):
+  File "/global/homes/j/jywu/.conda/envs/torch/bin/jupyter-kernel", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_core/application.py", line 283, in launch_instance
+    super().launch_instance(argv=argv, **kwargs)
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/traitlets/config/application.py", line 1075, in launch_instance
+    app.start()
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/kernelapp.py", line 84, in start
+    self.km.start_kernel()
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/asyncio/base_events.py", line 685, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/manager.py", line 96, in wrapper
+    raise e
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/manager.py", line 87, in wrapper
+    out = await method(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/manager.py", line 435, in _async_start_kernel
+    kernel_cmd, kw = await self._async_pre_start_kernel(**kw)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/manager.py", line 400, in _async_pre_start_kernel
+    kw = await self.provisioner.pre_launch(**kw)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/global/homes/j/jywu/.conda/envs/torch/lib/python3.12/site-packages/jupyter_client/provisioning/local_provisioner.py", line 177, in pre_launch
+    raise RuntimeError(msg)
+RuntimeError: Can only launch a kernel on a local interface. This one is not: nid005994.Make sure that the '*_address' attributes are configured properly. Currently valid addresses are: ['127.0.0.1', '10.100.76.65', '10.249.14.6', '128.55.77.209', '0.0.0.0', '']
