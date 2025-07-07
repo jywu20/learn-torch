@@ -1,0 +1,2 @@
+- [`AE.ipyub`](AE.ipynb): a comparison between CNN-AE and naive MLP-AE
+- [`CNN-AE.ipynb`](CNN-AE.ipynb): on different training methods and learning rates in training CNN-AE.
