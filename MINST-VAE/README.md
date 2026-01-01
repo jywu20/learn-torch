@@ -5,3 +5,4 @@
   Go to the next notebook for a real AE.
 - [`CNN-AE-latent-space-size.ipynb`](CNN-AE-latent-space-size.ipynb): on the size of the latent space.
 - [`CNN-AE-latent-space-structure.ipynb`](CNN-AE-latent-space-structure.ipynb): on interpreting the latent space.
+- [`CNN-VAE-latent-space-structure.ipynb`](CNN-AE-latent-space-structure.ipynb): training a VAE and exploring its latent space.
