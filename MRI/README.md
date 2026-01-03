@@ -1,0 +1,2 @@
+- [`MRI-plain.ipynb`](MRI-plain.ipynb) is a basic version of the CNN code 
+- [`MRI-dilated.ipynb`](MRI-dilated.ipynb) adds dilation and some evaluation functionalities
